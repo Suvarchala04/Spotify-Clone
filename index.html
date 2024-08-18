@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- links to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- adding icon at title  -->
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav-option">
+                        <img src="/assets/library_icon.png" alt="library">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png" alt="back">
+                    <img src="./assets/forward_icon.png" alt="forward" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item" id="dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
+            </div>
+            
+                <h2>Recently Played</h2>
+            
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="assets/card1img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-body">Your daily update of the most played tracks...</p>
+                    </div>
+                </div>
+
+                <h2>Recommended for today</h2>
+                    <div class="cards-container">
+                        <div class="card">
+                            <img src="assets/card7.jpeg" alt="" class="card-img">
+                            <p class="card-title">Idhe Idhe</p>
+                            <p class="card-body">Hesham Abdul Wahab</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets/apnabanale.jpeg" alt="" class="card-img">
+                            <p class="card-title">Apna Bana Le</p>
+                            <p class="card-body">Sachin Jigar, Arijit Singh, Amitabh Bhattacharya</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets/nijame.jpeg" alt="" class="card-img">
+                            <p class="card-title">Nijame Ne Cheb...</p>
+                            <p class="card-body">Sid Sriram, Shekar Chandra</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets/orange.jpeg" alt="" class="card-img">
+                            <p class="card-title">Nenu Nuvvantu</p>
+                            <p class="card-body">Naresh Iyer, Nadeesh, U.V.Jacky</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets/card10.jpeg" alt="" class="card-img">
+                            <p class="card-title">Poolamme Pilla...</p>
+                            <p class="card-body">GowraHari, Kasarla Shyam</p>
+                        </div>
+                        <div class="card">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2731b291d0933bd9890c1b354b7" alt="" class="card-img">
+                            <p class="card-title">Kurchi Madathapetti</p>
+                            <p class="card-body">Thaman S, Sri Krishna, Sahithi Chaganti, Mahesh Babu...</p>
+                        </div>
+                        <div class="card">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273c5abad22bd4a83f1f26feb54" alt="" class="card-img">
+                            <p class="card-title">Urike Urike</p>
+                            <p class="card-body">Sid Sriram, Ramya Behara, MM Sreelekha...</p>
+                        </div>
+                        <div class="card">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273e4c77dc1b6c85c754f7f136c" alt="" class="card-img">
+                            <p class="card-title">Shiddat (Reprise)</p>
+                            <p class="card-body">Manan Bharadwaj</p>
+                        </div>
+                    </div>
+                
+                <h2>Trending now near you</h2>
+                    <div class="cards-container">
+                        <div class="card">
+                            <img src="assets/card7.jpeg" alt="" class="card-img">
+                            <p class="card-title">Hi Nanna</p>
+                            <p class="card-body">Hesham Abdul Wahab</p>
+                        </div>
+                        <div class="card">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2739ef85991a22b950a9e4e3398" alt="" class="card-img">
+                            <p class="card-title">Tillu Square</p>
+                            <p class="card-body">2023. Ram Miriyala</p>
+                        </div>
+                        <div class="card">
+                            <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da841f94f6a5a709197444c1c6ed" alt="" class="card-img">
+                            <p class="card-title">Animal (Hindi)</p>
+                            <p class="card-body">2023. Manan Bharadwaj, Vishal Mishra, Jaani</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets/card9.jpeg" alt="" class="card-img">
+                            <p class="card-title">Teri Baatoan Mein Aisa Uljha Jiya</p>
+                            <p class="card-body">Raghav, Tanishk Bagchi, Asees Kaur</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets/card8.jpeg" alt="" class="card-img">
+                            <p class="card-title">Aashiqui 2</p>
+                            <p class="card-body">2013. Mithoon, Ankit Tiwari, Jeet...</p>
+                        </div>
+                        <div class="card">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2737b63faddb002915fbaeea776" alt="" class="card-img">
+                            <p class="card-title">MAD</p>
+                            <p class="card-body">2023. Bheems Ceciroleo</p>
+                        </div>
+                    </div>
+
+                <h2>Spotify original podcasts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67656300005f1f6aaad040cca397a48b82e0c2" alt="" class="card-img">
+                        <p class="card-title">Aa Modati Alajadi with Lipsika</p>
+                        <p class="card-body">Spotify Studios</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67656300005f1fd25f84e9f3884ce237cc741c" alt="" class="card-img">
+                        <p class="card-title">The Horror Show by Khooni</p>
+                        <p class="card-body">TMV Studios</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67656300005f1fd9b9f8b38f00230d9ffc392f" alt="" class="card-img">
+                        <p class="card-title">Best Love Stories</p>
+                        <p class="card-body">Spotify Studios</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67656300005f1fd14491f531c80a1bca7608f8" alt="" class="card-img">
+                        <p class="card-title">Anaganagaaa by Sai Kiran</p>
+                        <p class="card-body">Sai Kiran Challa</p>
+                    </div>
+                </div>
+
+                <h2>Featured Charts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="/assets/card5img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top Songs -...</p>
+                        <p class="card-body">Your weekly update of the most played tracks...</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/card6img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top Songs - India</p>
+                        <p class="card-body">Your weekly update of the most played tracks...</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card1img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-body">Your daily update of the most played tracks...</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="" class="card-img">
+                        <p class="card-title">Top 50 - India</p>
+                        <p class="card-body">Your daily update of the most played tracks...</p>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="line"></div>
+                </div>  
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="assets/nijame.jpeg" alt="">
+                <div class="song">
+                    <p class="song-title">Nijame Ne Chebu...</p>
+                    <p class="artist">Sid Sriram</p>
+                </div> 
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="assets/player_icon1.png" alt="" class="player-control-icon">
+                    <img src="assets/player_icon2.png" alt="" class="player-control-icon">
+                    <img src="assets/player_icon3.png" alt="" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="assets/player_icon4.png" alt="" class="player-control-icon">
+                    <img src="assets/player_icon5.png" alt="" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">1.01</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">3.34</span>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fa-regular fa-circle-play"></i>
+                <img src="assets/mic.png" alt="" class="player-icons">
+                <img src="assets/bars.png" alt="" class="player-icons">
+                <img src="assets/valume.webp" alt="" class="player-icons" style="width: 9%;">
+                <input type="range" min="0" max="100" class="sound-bar">
+                <img src="assets/fullScreeen.png" alt="" class="player-icons">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
